@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health & Care | Adventskalender 2026</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="winterwelt" aria-hidden="true">
+    <div class="mond"></div>
+    <div class="sterne"></div>
+    <div class="berge"></div>
+    <div class="schnee-boden"></div>
+
+    <div class="tanne tanne-links">
+      <div class="baumspitze">★</div>
+      <div class="baumkrone"></div>
+      <div class="baumstamm"></div>
+      <div class="baumlichter"></div>
+    </div>
+
+    <div class="tanne tanne-rechts">
+      <div class="baumspitze">★</div>
+      <div class="baumkrone"></div>
+      <div class="baumstamm"></div>
+      <div class="baumlichter"></div>
+    </div>
+  </div>
+
+  <div id="schneefall" aria-hidden="true"></div>
+
+  <main class="hauptinhalt">
+    <header class="kopfbereich">
+      <p class="team-name">SWISSCOM · HEALTH & CARE</p>
+      <div class="verzierung">✦ ❄ ✦</div>
+      <h1>Unser Adventskalender</h1>
+      <p class="jahr">2026</p>
+      <p class="untertitel">
+        24 Türchen, 6 Menschen und ganz viel Weihnachtsfreude.
+      </p>
+    </header>
+
+    <section class="kalender-bereich"
+             aria-label="Unsere 24 Adventstürchen">
+      <div id="adventskalender" class="kalender"></div>
+    </section>
+
+    <p class="hinweis">
+      ✨ Jeden Tag ein kleiner Weihnachtszauber ✨
+    </p>
+
+    <footer>
+      <p>Mit Liebe gestaltet vom Health & Care Team</p>
+      <p>
+        Luisa · Susanne · Anaïs · Mateo · Tommy · Loris
+      </p>
+    </footer>
+  </main>
+
+  <div id="popup"
+       class="popup versteckt"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="popup-titel">
+
+    <div class="popup-inhalt">
+      <button id="popup-schliessen"
+              class="schliessen"
+              aria-label="Fenster schliessen">
+        &times;
+      </button>
+
+      <div class="popup-stern">✦</div>
+      <p class="popup-label">HEALTH & CARE</p>
+      <p id="popup-datum" class="popup-datum"></p>
+
+      <h2 id="popup-titel"></h2>
+      <p id="popup-nachricht"></p>
+      <p id="popup-person"></p>
+
+      <button id="enthuellen" class="enthuellen">
+        Türchen enthüllen ✨
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>
